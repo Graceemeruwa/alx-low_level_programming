@@ -10,3 +10,4 @@ print_alphabt
 print_numbers
 print_numberz
 print_tebahpla
+print_base16

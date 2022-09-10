@@ -13,3 +13,4 @@ print_tebahpla
 print_base16
 print_comb
 print_comb3
+print_comb4

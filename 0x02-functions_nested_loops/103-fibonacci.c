@@ -1,5 +1,3 @@
-vi 104-fibonacci.c
-
 #include <stdio.h>
 
 
@@ -7,12 +5,9 @@ vi 104-fibonacci.c
 
 
 /**
- * numLength - returns the lenth of string
-
+ * numLength-returns the lenth of string
  * @num : operand number
-
  * Return: number of digits
-
  */
 int numLength(int num)
 

@@ -3,7 +3,6 @@
 
 
 /**
-
  * print_last_digit - print the last digiti of num
 
  * @n: is the number that we will take and return its last digit.

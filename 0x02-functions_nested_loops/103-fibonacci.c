@@ -7,7 +7,6 @@ vi 104-fibonacci.c
 
 
 /**
-
  * numLength - returns the lenth of string
 
  * @num : operand number

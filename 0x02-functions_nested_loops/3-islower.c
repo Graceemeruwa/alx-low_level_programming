@@ -3,7 +3,6 @@
 
 
 /**
-
  * _islower - function to check if
 
  * character is lowercase

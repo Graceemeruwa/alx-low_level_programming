@@ -1,34 +1,15 @@
 #include "main.h"
 
-#include <string.h>
-
-
-
 /**
- * main - Entry point
- *
- * Description: prints _putchar using putchar prototype
- *
- * Return: Always 0 (Success)
-*/
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
+ */
 int main(void)
-
 {
+int i;
 
-	char str[] = "_putchar";
+i = 0;
+positive_or_negative(i);
 
-	int ch;
-
-
-
-	for (ch = 0; ch < 8; ++ch)
-
-		_putchar(str[ch]);
-
-	_putchar('\n');
-
-
-
-	return (0);
-
+return (0);
 }

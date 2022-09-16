@@ -20,4 +20,4 @@ int _isupper(int);
 int _isdigit(int);
 int nul(int, int);
 
-#endif /' MAIN_H '/
+#endif /* MAIN_H */

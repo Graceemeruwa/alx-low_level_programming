@@ -1,47 +1,36 @@
-#include"main.h"
+#include <stdio.h>
 
+#include "main.h"
 
 /**
- * more_numbers - print 0 - 14 ten times and you
- *		can only use _putchar three times
- *
- * Return: Always 0 (Success)
-*/
+ * print_line - function that draws a straight line in the terminal
+ * You can only use _putchar function to print
+ * @n: is the number of times the character _ should be printed
+ * The line should end with a \n
+ * If n is 0 or less, the function should only print \n
+ * Return: void
+ */
 
-void more_numbers(void)
+void print_line(int n)
 
 {
 
-	int num, row, count;
+	int i;
 
 
 
-	for (row = 1; row <= 10; ++row)
+	i = 0;
+
+	while (i < n && n > 0)
 
 	{
 
-		for (count = 0; count <= 14; ++count)
+		_putchar(95);
 
-		{
-
-			num = count;
-
-			if (count > 9)
-
-			{
-
-				_putchar(1 + 48);
-
-				num = count % 10;
-
-			}
-
-			_putchar(num + 48);
-
-		}
-
-		_putchar('\n');
+		i++;
 
 	}
+
+	_putchar('\n');
 
 }

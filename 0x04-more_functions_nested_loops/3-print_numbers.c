@@ -1,21 +1,24 @@
-#include"main.h"
+#include <stdio.h>
+#include "main.h"
 
 
 
 /**
- * print_numbers - a function that  prints the numbers from  0 to 9
- *             only using _putchar twice
+ * print_numbers - function that print all numbers from 0 - 9
  *
- * Return: Always 0-9 followed by newline
+ * Return: return nothing
  */
 
 void print_numbers(void)
 
 {
-int i;
-	for (i = 0, i <= 9; i++;)
-		_putchar(i + '0');
 
-	_putchar('\n');
+	int n;
 
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
+	putchar(10);
+	
 }

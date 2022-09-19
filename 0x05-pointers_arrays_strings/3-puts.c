@@ -2,27 +2,27 @@
 
 
 /**
- * _puts - a function that prints a string
- * @str: string input
- * Return: string
+ *_puts - prints a string
+ *
+ *@str: pointer that will store the string's location
+ *
+ *Return: nothing
  */
 
 void _puts(char *str)
 
 {
 
-	int i;
-
-
-
-	for (i = 0; str[i] != '\0'; i++)
+	while (*str != 0)
 
 	{
 
-		_putchar(str[i]);
+		_putchar(*str);
+
+		str++;
 
 	}
 
-	_putchar('\n');
+	_putchar(10);
 
 }

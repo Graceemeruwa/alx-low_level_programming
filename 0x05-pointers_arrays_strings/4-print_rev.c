@@ -2,22 +2,45 @@
 
 
 /**
- * print_rev - prints a string in reverse
+ *print_rev - prints a string in reverse
  *
- * @s: string parameter input
+ *@s: pointer that will store the string's location
  *
- * Return: Nothing
+ *Return: nothing
  */
+
 void print_rev(char *s)
 
 {
 
-	int index;
-	/*finds the length of string without null character*/
-	for (index = 0; s[index] != '\0'; ++index)
-	/*print char from the last index as you decrement*/
+	int p = 0;
 
-	for (--index; index >= 0; --index)
-		_putchar(s[index]);
-	_putchar('\n');
+
+
+	while (*s != 0)
+
+	{
+
+		s++;
+
+		p++;
+
+	}
+
+	s--;
+
+	while (p > 0)
+
+	{
+
+		_putchar(*s);
+
+		s--;
+
+		p--;
+
+	}
+
+	_putchar(10);
+
 }

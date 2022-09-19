@@ -13,29 +13,13 @@
 void puts2(char *str)
 
 {
+	int i;
 
-	int cycle;
-
-
-
-	while (*str != 0)
-
+	for (i = 0; str[i] != '\0'; ++i)
 	{
 
-		if (cycle % 2 == 0)
-
-		{
-
-			_putchar(*str);
-
-		}
-
-		cycle++;
-
-		str++;
-
+	if (i % 2 == 0)
+	_putchar(str[i]);
 	}
-
-	_putchar(10);
-
+	_putchar('\n');
 }

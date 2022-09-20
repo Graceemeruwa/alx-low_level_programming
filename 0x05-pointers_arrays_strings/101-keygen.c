@@ -7,55 +7,57 @@
 
 
 /**
-  * main - entry point
-  * Description: creates a random key for program 101_crackme
-  * Return: always 0
-  */
+ * main - generate random password
+ *
+ * Return: returns integer on success
+ */
 
 int main(void)
 
 {
 
-	    int sum, i, r;
+	int pass[100];
+
+	int i, count, s;
 
 
 
-		char decode[27] = "abcdefghijklmnopqrstuvwxyz";
-
-		char key[30];
+	count = 0;
 
 
 
-		sum = 0;
-
-		i = 0;
+	srand(time(NULL));
 
 
 
-		srand(time(NULL));
+	for (i = 0; i < 100; i++)
 
+	{
 
+		pass[i] = rand() % 78;
 
-		while (sum < 2772)
+		count += (pass[i] + '0');
+
+		putchar(pass[i] + '0');
+
+		if ((2772 - count) - '0' < 78)
 
 		{
 
-			r = rand() % 10;
+			s = 2772 - count - '0';
 
-			key[i] = decode[r];
+			count += s;
 
-			sum += key[i];
+			putchar(s + '0');
 
-			i++;
+			break;
 
 		}
 
-		r = 2772 - sum;
+	}
 
-		key[i] = r;
 
-		printf("%s\n",  key);
 
-		return (0);
+	return (0);
 
 }

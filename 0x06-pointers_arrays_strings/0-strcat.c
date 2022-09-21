@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat -  function to concatenate pointer strings
+ * _strcat -  function to concatenate pointer strings
  * @dest: destination string
  * @src: second string to append to dest
  * Return: returning destination after appending src
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
@@ -16,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	for (j = 0; src[j] != '\0'; j++ i++)
+	for (j = 0; src[j] != '\0'; j++, i++)
 	{
 		dest[i] = src[j];
 	}
